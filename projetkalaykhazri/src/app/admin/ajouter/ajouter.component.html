@@ -1,0 +1,34 @@
+<form [formGroup]="ajoutform" (ngSubmit)="onSubmit()" novalidate class="form-container">
+    <h3>Ajouter un prodit</h3>
+  
+    <label for="productId">Identifiant du produit:</label>
+    <input type="text" id="productId" formControlName="id"  readonly/>
+  
+    <label for="productName">Nom du produit:</label>
+    <input type="text" id="productName" formControlName="nom" />
+  
+    <label for="productManufacturer">Fabricant:</label>
+    <input type="text" id="productManufacturer" formControlName="fabricant" />
+    <label for="productManufacturer">photo</label>
+    <input type="text" id="productManufacturer" formControlName="photo" />
+  
+    <label for="productPrice">Prix:</label>
+    <input type="text" id="productPrice" formControlName="prix" />
+  
+    <label for="productDescription">Description:</label>
+    <input type="text" id="productDescription" formControlName="description" />
+  
+    <label for="productWarranty">Garantie du produit:</label>
+    <input type="text" id="productWarranty" formControlName="garantie" />
+  
+    <label for="productAvailability">Disponibilité:</label>
+    <input type="text" id="productAvailability" formControlName="availability" />
+  
+    <label for="inStock" class="checkbox-label">en Stock<br>
+      <input type="checkbox" id="inStock" formControlName="enStock" /> oui
+      <input type="checkbox" id="inStock" formControlName="enStock" /> non
+    </label>
+  
+    <button type="submit">ajouter</button>
+  </form>
+  
